@@ -746,7 +746,7 @@ module.exports = function (webpackEnv) {
           ignore: ["node_modules", "webpack.config.js"],
           debug:true,
           rewrite:true,
-          stripPrefix:"~/static/js",
+          urlPrefix:"~/static/js",
           deploy:{
             env:"webpack-prod-test"
           },
