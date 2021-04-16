@@ -741,7 +741,8 @@ module.exports = function (webpackEnv) {
         new SentryWebpackPlugin({
           include:".",
           org:"testorg-az",
-          project:"webpack-test",
+          project:env.SENTRY_PROJECT,
+          
           include: "./build/static/js",
           ignore: ["node_modules", "webpack.config.js"],
           debug:true,
