@@ -1,7 +1,11 @@
 import logo from './logo.svg';
+
 import './App.css';
 
 function App() {
+  const throwError = () =>{
+    throw new Error("Test webpack");
+  }
   return (
     <div className="App">
       <header className="App-header">
@@ -17,6 +21,7 @@ function App() {
         >
           Learn React
         </a>
+        <button onClick={() => throwError()}>Throw</button>
       </header>
     </div>
   );
